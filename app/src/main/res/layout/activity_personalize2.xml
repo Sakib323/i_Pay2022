@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="10dp"
+    tools:context=".personalize">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/newbg6">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/bitcoin" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bungee"
+            android:text="Name"
+            android:textColor="#4CFF00"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/bungee"
+            android:text="Username"
+            android:textColor="#4CFF00"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/bungee"
+            android:text="phoneNo"
+            android:textColor="#4CFF00"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/bungee"
+            android:text="Email"
+            android:textColor="#4CFF00"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/bungee"
+            android:text="Diamond"
+            android:textColor="#4CFF00"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/iCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/bungee"
+            android:text="Balance"
+            android:textColor="#4CFF00"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/seeall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btncasino"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-black"
+            android:text="See All"
+            android:textColor="#EB0000"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blurlayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#ff5d9e"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/howto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/goldcoin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="How To Earn"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            app:cardBackgroundColor="#15d78f"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/earnmore"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/casha" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Earn More"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            app:cardBackgroundColor="#3fefef"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/notifiction"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/notification" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Notification"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/newbg1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/bungee"
+            android:text="Claim all hourly reward within 10 minutes of a hour.You also have a daily reward check in plan.Even a user can trade on diamond market which works like a share market where price for diamond keeps changing continuously and be sure to play more and more games.Those mentioned activity can increase your earning up to 86% higher"
+            android:textColor="#36eeff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/piechart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/money" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/blurlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/pie"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnnew6"
+        app:blk_blurRadius="5"
+        app:blk_cornerRadius="45dp"
+        app:blk_downscaleFactor="0.12"
+        app:blk_fps="20">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/amountpaypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:text="10 usd"
+                    android:textColor="#4CFF00"
+                    android:textSize="7sp">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/paypal"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/paypal" />
+
+                <TextView
+                    android:id="@+id/withdrawpaypal"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btncasino"
+                    android:fontFamily="@font/bungee"
+                    android:padding="5dp"
+                    android:text="Withdraw"
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textSize="10sp"
+                    android:textStyle="bold">
+
+                </TextView>
+           </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/amazon"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/amazongiftcard" />
+
+                <TextView
+                    android:id="@+id/amountamazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:text="10 usd"
+                    android:textColor="#4CFF00"
+                    android:textSize="7sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawamazon"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btncasino"
+                    android:fontFamily="@font/bungee"
+                    android:padding="5dp"
+                    android:text="Withdraw"
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/paytm"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/paytm" />
+
+                <TextView
+                    android:id="@+id/amountpaytm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:text="10 usd"
+                    android:textColor="#4CFF00"
+                    android:textSize="7sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawpaytm"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btncasino"
+                    android:fontFamily="@font/bungee"
+                    android:padding="5dp"
+                    android:text="Withdraw"
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bitcoin"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/bitcoin" />
+
+                <TextView
+                    android:id="@+id/amountbitcoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:text="10 usd"
+                    android:textColor="#4CFF00"
+                    android:textSize="7sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawbitcoin"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btncasino"
+                    android:fontFamily="@font/bungee"
+                    android:padding="5dp"
+                    android:text="Withdraw"
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/freefire"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/freefiretopup" />
+
+                <TextView
+                    android:id="@+id/amountfreefire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:text="10 usd"
+                    android:textColor="#4CFF00"
+                    android:textSize="7sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawfreefire"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btncasino"
+                    android:fontFamily="@font/bungee"
+                    android:padding="5dp"
+                    android:text="Withdraw"
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/google"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/googlegiftcard" />
+
+                <TextView
+                    android:id="@+id/amountgoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bungee"
+                    android:text="10 usd"
+                    android:textColor="#4CFF00"
+                    android:textSize="7sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawgoogle"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btncasino"
+                    android:fontFamily="@font/bungee"
+                    android:padding="5dp"
+                    android:text="Withdraw"
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

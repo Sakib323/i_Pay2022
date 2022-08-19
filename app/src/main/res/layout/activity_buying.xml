@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buying"
+    tools:context=".buying">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/bothcard"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forrefresh"
+            app:cardBackgroundColor="@color/gnt_blue"
+            app:cardCornerRadius="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/onlyline"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:textSize="10sp"
+                android:fontFamily="@font/bungee"
+                android:textColor="@color/white"
+                android:text="Your iCoin Balance">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="1000"
+                android:id="@+id/changingvalue"
+                android:fontFamily="@font/bungee"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/gnt_white"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diamond"
+            android:layout_toRightOf="@id/forrefresh"
+            app:cardBackgroundColor="#ff9e36"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:fontFamily="@font/bungee"
+                android:textColor="@color/white"
+                android:text="Diamond You have">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="1000"
+                android:id="@+id/youhave"
+                android:fontFamily="@font/bungee"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/gnt_white"
+                android:layout_marginTop="40dp">
+            </TextView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:src="@drawable/diamond"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/blackdiamond" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/anim"
+        android:padding="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amount"
+        android:layout_width="150dp"
+        android:background="@drawable/btncasino"
+        android:textColorHint="#FF0000"
+        app:hintTextColor="#FF0000"
+        android:layout_height="50dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Buying Amount">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColor="@color/gnt_white"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btncasino"
+            android:fontFamily="sans-serif-black"
+            android:text="Confirm"
+            android:textColor="#00eb10"
+            android:textStyle="bold" />
+
+</RelativeLayout>
+
+
+</RelativeLayout>

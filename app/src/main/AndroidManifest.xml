@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itsolution.ipay">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_ipay"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IPay"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".web_games"
+            android:exported="false" />
+        <activity
+            android:name=".vpnconnection"
+            android:exported="false" />
+        <activity
+            android:name=".spinvoucher"
+            android:exported="false" />
+        <activity
+            android:name=".FAN"
+            android:exported="false" />
+        <activity
+            android:name=".voucher"
+            android:exported="false" />
+        <activity
+            android:name=".ClaimVoucher"
+            android:exported="false" />
+        <activity
+            android:name=".Selling"
+            android:exported="false" />
+        <activity
+            android:name=".buying"
+            android:exported="false" />
+        <activity
+            android:name=".Market"
+            android:exported="false" />
+        <activity
+            android:name=".mincasino"
+            android:exported="false" />
+        <activity
+            android:name=".casino"
+            android:exported="false" />
+        <activity
+            android:name=".personalize"
+            android:exported="false" />
+        <activity
+            android:name=".nointernet"
+            android:exported="false" />
+        <activity
+            android:name=".hourly100"
+            android:exported="false" />
+        <activity
+            android:name=".aboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".waituntil"
+            android:exported="true" />
+        <activity
+            android:name=".privacy"
+            android:exported="true" />
+        <activity
+            android:name=".Refer"
+            android:exported="true" />
+        <activity
+            android:name=".Youtube"
+            android:exported="true" />
+        <activity
+            android:name=".Browser"
+            android:exported="true" />
+        <activity
+            android:name=".Guessdigit"
+            android:exported="true" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Quiz"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".GameOverActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity1"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".GameOver"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".pop_up_for_lotto"
+            android:exported="true" />
+        <activity
+            android:name=".Dice"
+            android:exported="true" />
+        <activity
+            android:name=".Withdrawal"
+            android:exported="true" />
+        <activity
+            android:name=".See_All"
+            android:exported="true" />
+        <activity
+            android:name=".Rewarded_Interstial"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".candy_crush"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Rewarded"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".slotmachine"
+            android:exported="true" />
+        <activity
+            android:name=".Lucky_Spin"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4790419998077780~6491506131" />
+
+        <service
+            android:name=".FirebaseMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

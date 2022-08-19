@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casinoimgforextra"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.itsolution.ipay.spinvoucher">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/spinuhave"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:padding="5dp"
+            android:background="@drawable/btnnew6"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:textColor="@color/gnt_blue"
+            android:text="Spin You have            "/>
+        <TextView
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:background="@drawable/newbg1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:textColor="@color/gnt_white"
+            android:text="0"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/spinBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wheel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btncasino"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Spin"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/newbg4"
+        android:padding="5dp"
+        android:fontFamily="@font/bungee"
+        android:text="1 USD PAYPAL GIFT CARD"
+        android:textAlignment="center"
+        android:textColor="#F8F307"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/voucherspin" />
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@id/wheel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        app:srcCompat="@drawable/triangle" />
+
+</RelativeLayout>

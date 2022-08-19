@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bgforclaim"
+    tools:context=".ClaimVoucher">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/blurlayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btnnew"
+            app:blk_blurRadius="5"
+            app:blk_cornerRadius="45dp"
+            app:blk_downscaleFactor="0.12"
+            app:blk_fps="20">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/voucher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/bungee"
+                android:text="Diamond Voucher"
+                android:textColor="#F43636" />
+
+            <TextView
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btncasino"
+                android:padding="5dp"
+                android:text="CLAIM"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/diamond" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blurlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/blurlayout"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btnnew"
+            app:blk_blurRadius="5"
+            app:blk_cornerRadius="45dp"
+            app:blk_downscaleFactor="0.12"
+            app:blk_fps="20">
+
+            <TextView
+                android:id="@+id/voucher2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/bungee"
+                android:text="iCoin Heist"
+                android:textColor="#FF9800" />
+
+            <TextView
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btncasino"
+                android:padding="5dp"
+                android:text="CLAIM"
+                android:textAlignment="center"
+                android:textColor="#FFAA00"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/arrow" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/goldcoin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blurlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/blurlayout2"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btnnew"
+            app:blk_blurRadius="5"
+            app:blk_cornerRadius="45dp"
+            app:blk_downscaleFactor="0.12"
+            app:blk_fps="20">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/voucher3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/bungee"
+                android:text="Surprise Gift"
+                android:textColor="#10EB00" />
+
+            <TextView
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btncasino"
+                android:padding="5dp"
+                android:text="CLAIM"
+                android:textAlignment="center"
+                android:textColor="#C4E91E"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/trassurefornot" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

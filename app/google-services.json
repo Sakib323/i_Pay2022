@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "35304370742",
+    "firebase_url": "https://i-pay-86691-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "i-pay-86691",
+    "storage_bucket": "i-pay-86691.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35304370742:android:b6bc20b19bf886e2451e97",
+        "android_client_info": {
+          "package_name": "com.example.ipay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35304370742-46l4aofjqomskhn0lbdtg79rrqurcfl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIaGW1YCRZPiJ8nKlYJTutY-YDBOquLjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35304370742-46l4aofjqomskhn0lbdtg79rrqurcfl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2884708721623351~5812057353"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35304370742:android:40bab74e6b1bb025451e97",
+        "android_client_info": {
+          "package_name": "com.itsolution.ipay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35304370742-46l4aofjqomskhn0lbdtg79rrqurcfl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIaGW1YCRZPiJ8nKlYJTutY-YDBOquLjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35304370742-46l4aofjqomskhn0lbdtg79rrqurcfl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

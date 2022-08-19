@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/minicasinobg"
+    tools:context=".casino">
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/wheel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"
+        app:srcCompat="@drawable/triangle" />
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/wheelfor" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/wheel"
+    android:id="@+id/text"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gnt_blue"
+        android:fontFamily="@font/bungee"
+        android:padding="5dp"
+        android:text="Number on wheel"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/yourguess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/resultTv"
+        android:background="#ff9e36"
+        android:fontFamily="@font/bungee"
+        android:padding="5dp"
+        android:text="Number yoy have guess"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+
+
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/yourguess"
+        android:background="#fc7303"
+        android:fontFamily="@font/bungee"
+        android:padding="5dp"
+        android:text="Bet Amount"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/spinBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btncasino"
+        android:fontFamily="sans-serif-black"
+        android:text="Spin"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/clm1"
+        android:layout_below="@+id/spinBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp1"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="28"
+                android:textColor="#ff9e36"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn1"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="9"
+                android:textColor="#ff6a38"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp2"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="26"
+                android:textColor="#36eeff"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn3"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="30"
+                android:textColor="#ff38a5"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp3"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="11"
+                android:textColor="#3639ff"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn5"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="7"
+                android:textColor="#b938ff"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp4"
+            android:layout_marginLeft="150dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="20"
+                android:textColor="#9800f0"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn7"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="32"
+                android:textColor="#3860ff"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp5"
+            android:layout_marginLeft="200dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="17"
+                android:textSize="6sp"
+                android:textColor="#15d78f" />
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn9"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="5"
+                android:textColor="#38fff2"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp6"
+            android:layout_marginLeft="250dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="22"
+                android:textColor="#38ff8e"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn11"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="34"
+                android:textColor="#84ff38"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp7"
+            android:layout_marginLeft="300dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="15"
+                android:textColor="#ffee38"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn13"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="3"
+                android:textColor="#ff7a38"
+                android:textSize="6sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/clm2"
+        android:layout_below="@+id/clm1"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp8"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="24"
+                android:textColor="#fcff38"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn15"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="36"
+                android:textColor="#38ff7e"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp9"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn17"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="13"
+                android:textColor="#3fff38"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn18"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn17"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="1"
+                android:textColor="#ff3838"
+                android:textSize="6sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp10"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn19"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="27"
+                android:textSize="6sp"
+                android:textColor="#3fefef" />
+            <Button
+                android:layout_below="@id/btn19"
+                android:layout_marginTop="5dp"
+                android:text="10"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:id="@+id/btn20"
+                android:textSize="6sp"
+                android:layout_width="40dp"
+                android:background="@drawable/btncasino"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp11"
+            android:layout_marginLeft="150dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="25"
+                android:textColor="#3867ff"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn21"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="29"
+                android:textSize="6sp"
+                android:textColor="#99b4c2" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp12"
+            android:layout_marginLeft="200dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn23"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="12"
+                android:textColor="#15d78f"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn24"
+                android:clickable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn23"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:text="8"
+                android:textSize="6sp"
+                android:textColor="#cfff75" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp13"
+            android:layout_marginLeft="250dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn25"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="19"
+                android:textColor="#6aff38"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn26"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn25"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="31"
+                android:textSize="6sp"
+                android:textColor="#ff7700" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/grp26"
+            android:layout_marginLeft="300dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn27"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="18"
+                android:textColor="#ffdb38"
+                android:textSize="6sp" />
+
+            <Button
+                android:id="@+id/btn28"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn27"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btncasino"
+                android:clickable="true"
+                android:text="6"
+                android:textColor="#40ff00"
+                android:textSize="6sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clm2"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn29"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btncasino"
+            android:clickable="true"
+            android:text="21"
+            android:textColor="#00f7ff"
+            android:textSize="6sp" />
+
+        <Button
+            android:id="@+id/btn30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn29"
+            android:background="@drawable/btncasino"
+            android:clickable="true"
+            android:text="33"
+            android:textColor="#09ff00"
+            android:textSize="6sp" />
+
+        <Button
+            android:id="@+id/btn31"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn30"
+            android:background="@drawable/btncasino"
+            android:clickable="true"
+            android:text="16"
+            android:textColor="#0022ff"
+            android:textSize="6sp" />
+
+        <Button
+            android:id="@+id/btn32"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn31"
+            android:background="@drawable/btncasino"
+            android:clickable="true"
+            android:text="4"
+            android:textColor="#c8ff00"
+            android:textSize="6sp" />
+
+        <Button
+            android:id="@+id/btn33"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn32"
+            android:background="@drawable/btncasino"
+            android:clickable="true"
+            android:text="23"
+            android:textColor="#fcfdff"
+            android:textSize="6sp" />
+
+        <Button
+            android:id="@+id/btn34"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn33"
+            android:background="@drawable/btncasino"
+            android:clickable="true"
+            android:text="35"
+            android:textColor="#00ffea"
+            android:textSize="6sp" />
+
+        <Button
+            android:id="@+id/btn35"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn34"
+            android:background="@drawable/btncasino"
+            android:clickable="true"
+            android:text="14"
+            android:textColor="#E91E63"
+            android:textSize="6sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

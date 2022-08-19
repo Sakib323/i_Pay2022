@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_for_fish"
+    tools:context="com.itsolution.ipay.candy_crush">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btncasino"
+        android:padding="20dp"
+        android:id="@+id/linLay"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/goldcoin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score--"
+            android:fontFamily="@font/bungee"
+            android:textSize="20sp"
+            android:textColor="#FADA0C">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee"
+            android:textColor="#FADA0C">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/imgs"
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:blk_blurRadius="2"
+        app:blk_cornerRadius="15dp"
+        app:blk_downscaleFactor="0.012"
+        app:blk_fps="9">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/board"
+        android:orientation="horizontal"/>
+    </io.alterac.blurkit.BlurLayout>
+</LinearLayout>

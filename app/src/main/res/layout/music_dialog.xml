@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:padding="5dp"
+    android:id="@+id/root_vg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="100dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/dialog_music">
+
+                </com.airbnb.lottie.LottieAnimationView>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+
+                android:id="@+id/blurlayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/freeplay" />
+
+                <TextView
+                    android:id="@+id/voucher1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="Freeplay"
+                    android:textColor="#78F436"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm1"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#FF0000"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/bungee"
+                    android:gravity="center"
+                    android:text="1 usd"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/jiosaavan" />
+
+                <TextView
+                    android:id="@+id/voucher2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="jio saavan"
+                    android:textColor="#F43636"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm2"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#00FFC4"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/soundcloud" />
+
+                <TextView
+                    android:id="@+id/voucher3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="Sound Clouds"
+                    android:textColor="#36A2F4"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm3"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#4CFF00"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/wynk_regular" />
+
+                <TextView
+                    android:id="@+id/voucher5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="wynk music"
+                    android:textColor="#36F4DE"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm4"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#00FFAE"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurlayout4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/jango" />
+
+                <TextView
+                    android:id="@+id/voucher4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="JaNGO MUSIC"
+                    android:textColor="#F4C536"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm5"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#00FFAE"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/blurlayout5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout4"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ganna" />
+
+                <TextView
+                    android:id="@+id/voucher6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="Gaana"
+                    android:textColor="#FF5722"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm6"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#00FFAE"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurlayout6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout5"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/di" />
+
+                <TextView
+                    android:id="@+id/voucher7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="di"
+                    android:textColor="#77FF22"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm7"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#00FFAE"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurlayout7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout6"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/boomplay" />
+
+                <TextView
+                    android:id="@+id/voucher8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="boom play"
+                    android:textColor="#00BCD4"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm8"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#00FFAE"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blurlayout8"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/blurlayout7"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btnnew"
+                app:blk_blurRadius="5"
+                app:blk_cornerRadius="45dp"
+                app:blk_downscaleFactor="0.12"
+                app:blk_fps="20">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/freeplay" />
+
+                <TextView
+                    android:id="@+id/voucher9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="Stream Squid"
+                    android:textColor="#FF5722"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/btnm9"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btncasino"
+                    android:padding="1dp"
+                    android:text="PLAY"
+                    android:textAlignment="center"
+                    android:textColor="#00FFAE"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="1 usd"
+                    android:gravity="center"
+                    android:fontFamily="@font/bungee"
+                    android:textColor="#00BCD4" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgfordialog"
+        app:cardBackgroundColor="#8A00D4"
+        app:cardCornerRadius="20dp">
+
+        <io.alterac.blurkit.BlurLayout
+            android:id="@+id/imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            app:blk_blurRadius="5"
+            app:blk_cornerRadius="45dp"
+            app:blk_downscaleFactor="0.12"
+            app:blk_fps="20">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/animation"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="100dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:lottie_rawRes="@raw/games_dialog" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageButton
+                    android:id="@+id/Buy"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/okay_button" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/animation"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/bungee"
+                    android:padding="20dp"
+                    android:text="For each minute here you will get 15 to 25 iCoin depending on vpn connection(vpn bonus) and paypal cash"
+                    android:textColor="#8EFF0D"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </io.alterac.blurkit.BlurLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

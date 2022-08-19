@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:padding="5dp"
+    android:id="@+id/root_vg">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="100dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/goldcoin">
+
+            </com.airbnb.lottie.LottieAnimationView>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/blurlayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btnnew6"
+            app:blk_blurRadius="5"
+            app:blk_cornerRadius="45dp"
+            app:blk_downscaleFactor="0.12"
+            app:blk_fps="20">
+
+
+            <TextView
+                android:id="@+id/voucher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bungee"
+                android:text="How To Earn"
+                android:textColor="#78F436"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voucher1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/anim"
+                android:fontFamily="@font/bungee"
+                android:padding="1dp"
+                android:text="Once you reach 100000 iCoin you can make Cash Out request through any of payment method mentioned here.You can make money through playing games,watching video and many more.
+You even can earn through collecting voucher like paypal,amazon,paytm cash individually and make cash out.Minimum cash out amount for those voucher are $100"
+                android:textAlignment="center"
+                android:textColor="#FFD84D"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/diamond" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/blurlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/blurlayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/newbg2"
+        app:blk_blurRadius="5"
+        app:blk_cornerRadius="45dp"
+        app:blk_downscaleFactor="0.12"
+        app:blk_fps="20">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/video_game3" />
+
+        <TextView
+            android:id="@+id/voucher2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/bungee"
+            android:text="Play Games"
+            android:textColor="#F43636"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn2"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btncasino"
+            android:padding="1dp"
+            android:text="Play"
+            android:textAlignment="center"
+            android:textColor="#00FFC4"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/diamondbox" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blurlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/blurlayout1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/newbg6"
+        app:blk_blurRadius="5"
+        app:blk_cornerRadius="45dp"
+        app:blk_downscaleFactor="0.12"
+        app:blk_fps="20">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_music" />
+
+        <TextView
+            android:id="@+id/voucher3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/bungee"
+            android:text="Listen Music"
+            android:textColor="#F43636"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn3"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btncasino"
+            android:padding="1dp"
+            android:text="Go to music"
+            android:textAlignment="center"
+            android:textColor="#00FFC4"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_marginRight="15dp"
+            app:lottie_rawRes="@raw/diamondbox" />
+    </RelativeLayout>
+</LinearLayout>
+
+</ScrollView>
